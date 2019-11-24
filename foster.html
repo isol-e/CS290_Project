@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fluffy Dream</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div id="navBar">
+        <ul>
+          <li><a href="content.html">Fluffy Dream</a></li>
+          <li><a href="animal.html">The Doggie Showcase</a></li>
+          <li><a href="adopt.html">Adopt</a></li>
+          <li><a href="foster.html">Foster</a></li>
+        </ul>
+    </div>
+
+    <div id="animalShowcase">
+      <h3>Thank you for applying to foster one of our dogs!</h3>
+      <img src="images/dog4.jpeg">
+      <p>Please read the information packet (downloadable <a href="dog.jpeg" download>here</a>) before applying.</p>
+      <p>If you can come to on-site to meet the dog before applying, that would be even better.</p>
+      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+        Name <input type="text" name="text_input"><br>
+        Email <input type="text" name="text_input"><br>
+        Address <input type="text" name="text_input"><br>
+        City <input type="text" name="text_input"><br>
+        Phone number <input type="text" name="text_input"><br>
+        Do you own or rent? <br>
+        <input type="radio" name="living">Own<br>
+        <input type="radio" name="living">Rent<br>
+        Are you a veteran? <br>
+        <input type="radio" name="living">Yes<br>
+        <input type="radio" name="living">No<br>
+        Have you ever had a dog before?<br>
+        <input type="radio" name="living">Yes<br>
+        <input type="radio" name="living">No<br>
+        Do you own any other pets? <br>
+        <input type="radio" name="living">Yes<br>
+        <input type="radio" name="living">No<br>
+        If so, how many? <input type="number" name="numerical_input"><br>
+        How many weeks can you foster for? <input type="number" name="numerical_input"><br>
+        <input type="submit">
+      </form>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div id="socialMedia">
+          <a href="https://www.instagram.com/dogsofinstagram/?hl=en" class="icons"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/dog_feelings?lang=en" class="icons"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+  </body>
+</html>

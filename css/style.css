@@ -1,0 +1,255 @@
+body {
+  background: #fffcfc;
+  margin: 0;
+  color: #F78E8E;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/*********Loader START**********/
+#loaderPrep{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: black;
+  animation-name: loadOut;
+  animation-duration: 1.3s;
+  animation-delay: 6.3s;
+  animation-fill-mode: forwards;
+}
+@media (min-width: 700px) {
+  #loader {
+    z-index: 1000;
+    position: absolute;
+    margin: auto;
+  	left: 0;
+  	top: 0;
+    bottom: 0;
+    right: 0;
+  	width: 600px;
+  	height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    color: white;
+    font-size: 25px;
+    text-shadow: 0px 0px 2px black;
+    animation-name: loadIn;
+    animation-duration: 7.8s;
+    animation-timing-function: cubic-bezier(0,.93,.56,.97);
+    animation-fill-mode: forwards;
+  }
+}
+@media (max-width: 700px) {
+  #loader {
+    margin: 150px 0px 0px 20px;
+    z-index: 1000;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    height: 450px;
+    color: white;
+    font-size: 22px;
+    text-shadow: 0px 0px 2px black;
+    animation-name: loadIn;
+    animation-duration: 7.8s;
+    animation-timing-function: cubic-bezier(0,.93,.56,.97);
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes loadIn {
+  0% {
+    opacity: 0;
+    transform: scale(2, 2);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.09, 1.09);
+  }
+}
+@keyframes loadOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.85;
+    transform: scale(1, 0);
+  }
+}
+/**********Loader END**********/
+
+/************FOOTER************/
+footer {
+  display: block;
+  width: 100%;
+  margin: auto;
+  background: black;
+  height: 53px;
+  border-top: 0.5px solid white;
+}
+
+#socialMedia {
+  text-align: center;
+}
+#socialMedia {
+  padding-top: 4px;
+}
+#socialMedia .icons {
+  padding-top: 6px;
+  color: grey;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	font-size: 20px;
+  border: 2px solid grey;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 3px 3px 5px #888;
+  margin-right: 6px;
+  transition: all 0.3s ease-in-out;
+}
+#socialMedia .icons:hover {
+  border: 2px solid #F78E8E;
+  color: #F78E8E;
+  box-shadow: 3px 3px 5px #F78E8E;
+}
+/************FOOTER END**************/
+
+/**Navigation bar***/
+#navBar {
+  font-family: "Kaushan Script";
+  font-size: 30px;
+  z-index: 99;
+  background-color: #F78E8E;
+  height: 50px;
+}
+#navBar ul {
+  list-style: none;
+}
+#navBar li {
+  display: inline;
+  padding-left: 10px;
+}
+#navBar a {
+  color: white;
+  list-style-type: none;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+#navBar a:hover, .active {
+  text-shadow: 1px 2px 4px black;
+  z-index: 3;
+}
+/***Navigation bar end****/
+
+/****Carousel***/
+/*******Code referenced from https://www.w3schools.com/howto/howto_js_slideshow.asp*****/
+.carousel {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  height: 270px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #F78E8E;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/**Carousel end***/
+
+
+#eventUpdates {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 150px;
+  border: 1px solid white;
+  width: 50%;
+  overflow-y: scroll;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  padding: 2px;
+  border: 2px solid #F78E8E;
+}
+#eventUpdates p {
+ font-family: "Kaushan Script";
+ font-size: 23px;
+}
+#eventUpdates dl {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+#eventUpdates dt, dd {
+  text-align: left;
+}
+
+#week {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #F78E8E;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*****Animal showcase*****/
+#animalShowcase {
+  margin: auto;
+  text-align: center;
+  margin: 10px;
+}
+#animalShowcase p{
+  font-size: 20px;
+}
+#animalShowcase img {
+  border: 2px solid #F78E8E;
+  border-radius: 10px;
+}
+#dogDescription ul {
+  list-style: none;
+}
+form {
+  padding: 10px;
+}
